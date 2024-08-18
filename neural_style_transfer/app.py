@@ -38,7 +38,7 @@ if __name__=="__main__":
 			preprocess_image(content, target_size=(img_width, img_height)), \
 			preprocess_image(style, target_size=(img_width, img_height))
 		
-		with st.spinner('Wait for it...'):
+		with st.spinner('Wait for it... It can take a while!'):
 			style_transfer = StyleTransfer()
 			img = style_transfer.minimize(img_height, img_width, base_image_proc, \
 								style_reference_image_proc, iterations=30)
