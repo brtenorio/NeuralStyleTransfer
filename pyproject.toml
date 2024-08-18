@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "neural-style-transfer"
+version = "0.1.0"
+description = ""
+authors = ["brtenorio <b.nunes.bruno@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">3.9.7,<3.12"
+ipykernel = "^6"
+numpy = "^1"
+matplotlib = "^3"
+streamlit = "^1.37.0"
+tensorflow-macos = "2.15.0"
+scikit-learn = "^1.5"
+scipy = "^1"
+joblib = "^1.4"
+threadpoolctl = "^3.5"
+pytest = "^8.3.2"
+setuptools = "^72.1.0"
+wheel = "^0.43.0"
+fastapi = "^0"
+uvicorn = "0.29.0"
+python-multipart = "^0.0.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
