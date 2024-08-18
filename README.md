@@ -19,9 +19,10 @@ This project implements Neural Style Transfer using the VGG16 architecture in Te
 Clone this repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/style-transfer.git
-cd style-transfer
+git clone https://github.com/brtenorio/NeuralStyleTransfer.git
+cd NeuralStyleTransfer
 make all
+```
 
 
 ## Docker
