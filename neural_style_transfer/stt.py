@@ -103,7 +103,13 @@ class StyleTransfer:
         return loss, grads
 
     def minimize(self, img_height, img_width, base_image_proc, style_reference_image_proc, iterations=40):
-        """Minimize the loss by updating the combination image."""
+        """Minimize the loss by updating the combination image.
+        img_height: the height of the image
+        img_width: the width of the image
+        base_image_proc: the preprocessed base image
+        style_reference_image_proc: the preprocessed style reference image
+        iterations: the number of iterations to run the optimization
+        """
 
         self.load_model((img_height, img_width, 3))
         lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
